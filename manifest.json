@@ -1,0 +1,22 @@
+{
+    "name": "Linkedin Parser",
+    "description": "To fetch the URL of profiles and display them in tabular format",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["cookies", "tabs", "activeTab", "scripting", "storage"],
+    "host_permissions": ["https://*.linkedin.com/*"],
+    "background": {
+      "service_worker": "background/background.js"
+    },
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": "assets/images/logo.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.linkedin.com/*"],
+        "js": ["content/content.js"]
+      }
+    ]
+  }
+  
