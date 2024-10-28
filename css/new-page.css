@@ -62,6 +62,22 @@ h1 {
   background-color: #e0e0e0;
 }
 
+/* Profile image styling */
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Delete icon styling */
+.delete-icon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+
 /* Responsive styling for smaller screens */
 @media (max-width: 600px) {
   #profile-data {
@@ -86,6 +102,11 @@ h1 {
   background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
   justify-content: center;
   align-items: center;
+}
+
+/* Class to display the modal */
+.show-modal {
+  display: flex;
 }
 
 /* Modal content (enlarged image) */

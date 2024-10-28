@@ -23,10 +23,10 @@ function displayProfileData(profiles) {
         profiles.forEach((profile, index) => {
             const row = document.createElement("tr");
             row.innerHTML = `
-                <td><img src="${profile.image || "default-image.jpg"}" alt="Profile Image" class="profile-image" width="100" height="100" style="border-radius: 50%; cursor: pointer;"></td>
+                <td><img src="${profile.image || "default-image.jpg"}" alt="Profile Image" class="profile-image"></td>
                 <td>${profile.name}</td>
                 <td>${profile.headline}</td>
-                <td><img src="../assets/images/delete.png" alt="Delete" class="delete-icon" data-index="${index}" style="cursor: pointer; width: 24px; height: 24px;"></td>
+                <td><img src="../assets/images/delete.png" alt="Delete" class="delete-icon" data-index="${index}"></td>
             `;
             tbody.appendChild(row);
         });
@@ -53,17 +53,17 @@ function displayProfileData(profiles) {
                 const modal = document.getElementById("image-modal");
                 const modalImage = document.getElementById("enlarged-image");
 
-                modal.style.display = "flex";
+                modal.classList.add("show-modal"); // Show modal
                 modalImage.src = this.src.replace("shrink_800_800", "shrink_1200_1200");
 
                 document.getElementById("close-modal").onclick = function () {
-                    modal.style.display = "none";
+                    modal.classList.remove("show-modal"); // Hide modal
                 };
 
                 // Close modal when clicking outside of it
                 window.onclick = function (event) {
                     if (event.target === modal) {
-                        modal.style.display = "none";
+                        modal.classList.remove("show-modal"); // Hide modal
                     }
                 };
             });

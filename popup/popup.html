@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LinkedIn Parser</title>
-    <link rel="stylesheet" href="popup.css" />
-  </head>
-  <body>
-    <!-- Login Section -->
-    <div id="login-section">
-      <p>Login to LinkedIn first</p>
-      <button id="btn-login">Login first</button>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkedIn Parser</title>
+  <link rel="stylesheet" href="../css/popup.css" />
+</head>
+<body>
+  <!-- Login Section -->
+  <div id="login-section">
+    <p>Login to LinkedIn first</p>
+    <button id="btn-login">Login first</button>
+  </div>
 
-    <!-- Fetch Data Section -->
-    <div id="fetch-section" style="display: none">
-      <p>Enter LinkedIn Profile URL</p>
-      <input type="text" id="linkedin-url" placeholder="Enter LinkedIn URL" />
-      <button id="btn-f">Fetch Data</button>
-    </div>
+  <!-- Fetch Data Section -->
+  <div id="fetch-section">
+    <p>Enter LinkedIn Profile URL</p>
+    <input type="text" id="linkedin-url" placeholder="Enter LinkedIn URL" />
+    <button id="btn-f">Fetch Data</button>
+  </div>
 
-    <script src="popup.js"></script>
-  </body>
+  <script src="popup.js"></script>
+</body>
 </html>

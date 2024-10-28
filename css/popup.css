@@ -1,0 +1,26 @@
+p {
+  padding: 10px;
+  font-size: 16px;
+  min-width: 100px;
+  width: 300px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Hide sections using the .hidden class */
+.hidden {
+  display: none;
+}
+
+#linkedin-url {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
